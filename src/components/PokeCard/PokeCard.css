@@ -53,3 +53,94 @@
 .Poke-tipo {
     font-size: 12px;
 }
+
+
+.poken-normal {
+  background-color: #a8a878;
+  border: 2px solid #6d6d4e;
+}
+
+.poken-fire {
+  background-color: #f08030;
+  border: 2px solid #9c531f;
+}
+
+.poken-water {
+  background-color: #6890f0;
+  border: 2px solid #445e9c;
+}
+
+.poken-electric {
+  background-color: #f8d030;
+  border: 2px solid #a1871f;
+}
+
+.poken-grass {
+  background-color: #78c850;
+  border: 2px solid #4e8234;
+}
+
+.poken-ice {
+  background-color: #98d8d8;
+  border: 2px solid #638d8d;
+}
+
+.poken-fighting {
+  background-color: #c03028;
+  border: 2px solid #7d1f1a;
+}
+
+.poken-poison {
+  background-color: #a040a0;
+  border: 2px solid #682a68;
+}
+
+.poken-ground {
+  background-color: #e0c068;
+  border: 2px solid #927d44;
+}
+
+.poken-flying {
+  background-color: #a890f0;
+  border: 2px solid #6d5e9c;
+}
+
+.poken-psychic {
+  background-color: #f85888;
+  border: 2px solid #a13959;
+}
+
+.poken-bug {
+  background-color: #a8b820;
+  border: 2px solid #6d7815;
+}
+
+.poken-rock {
+  background-color: #b8a038;
+  border: 2px solid #786824;
+}
+
+.poken-ghost {
+  background-color: #705898;
+  border: 2px solid #493963;
+}
+
+.poken-dragon {
+  background-color: #7038f8;
+  border: 2px solid #4924a0;
+}
+
+.poken-dark {
+  background-color: #705848;
+  border: 2px solid #49392f;
+}
+
+.poken-steel {
+  background-color: #b8b8d0;
+  border: 2px solid #787887;
+}
+
+.poken-fairy {
+  background-color: #ee99ac;
+  border: 2px solid #9b6470;
+}

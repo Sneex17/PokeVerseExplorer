@@ -16,7 +16,7 @@ function PaginationBtn({ OnBack, OnNext, Cargando, Page }: PaginationProp) {
         Cargando={Cargando}
         Page={Page}
       />
-      <ButtonControl text="Next" OnClick={OnNext} Cargando={Cargando}/>
+      <ButtonControl text="Next" OnClick={OnNext} Cargando={Cargando} />
     </div>
   );
 }

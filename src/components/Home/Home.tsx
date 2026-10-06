@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import InpuntBuscar from "../Inputs/InpuntBuscar";
 import "./Home.css";
 import PokeCard from "../PokeCard/PokeCard";
@@ -50,6 +50,7 @@ function Home() {
                 PokeId={p.id}
                 Nombre={p.name}
                 Imagen={p.sprites.other.dream_world.front_default}
+                Tipos={p.types}
               />
             );
           })}
