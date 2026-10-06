@@ -1,0 +1,50 @@
+.Container-Card {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 280px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 17px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.Container-id {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 70px;
+    height: 25px;
+    background-color: #E0EBF8;
+    border-radius: 17px;
+    border: 2px solid #3E4B6F;
+}
+
+.poke-id{
+    color: #2e3a52;
+    font-size: 15px;
+}
+
+.text-name {
+    color: #2e3a52;
+    font-size: 17px;
+}
+
+.Poke-img {
+    width: 90px;
+}
+
+.Container-tipo {
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 26px;
+    padding: 0 10px;
+    background-color: cadetblue;
+    border-radius: 50px;
+}
+
+.Poke-tipo {
+    font-size: 12px;
+}

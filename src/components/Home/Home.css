@@ -1,0 +1,13 @@
+.Container-Main{
+    padding: 0;
+}
+.Container-Dex{
+    width: auto;
+    height: 100vh;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    background-color: bisque;
+    gap: 10px;
+}
