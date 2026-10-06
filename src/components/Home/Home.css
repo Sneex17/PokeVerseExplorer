@@ -3,7 +3,7 @@
 }
 .Container-Dex{
     width: auto;
-    height: 100vh;
+    height: auto;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
