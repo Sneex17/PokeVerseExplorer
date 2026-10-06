@@ -1,6 +1,13 @@
 .Container-Main{
     padding: 0;
 }
+
+.Container-Controles{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 17px;
+    gap: 10px;
+}
 .Container-Dex{
     width: auto;
     height: auto;

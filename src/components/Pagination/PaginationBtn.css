@@ -1,0 +1,7 @@
+.Container-Pagination{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 17px;
+    gap: 4px;
+}

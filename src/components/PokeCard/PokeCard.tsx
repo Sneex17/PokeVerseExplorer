@@ -10,7 +10,7 @@ function PokeCard({PokeId, Nombre, Imagen}: DataCardProps) {
   return (
     <div className="Container-Card" key={PokeId}>
       <div className="Container-id">
-        <h4 className="poke-id">{PokeId}</h4>
+        <h4 className="poke-id">#{PokeId}</h4>
       </div>
       <div className="Conatiner-imagen">
         <img src={Imagen} alt={Nombre} className="Poke-img" />
