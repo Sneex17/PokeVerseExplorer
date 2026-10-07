@@ -6,6 +6,7 @@
     padding: 10px 15px;
     background-color: white;
     border-radius: 17px;
+    border:  1px solid #b3d0f4;
     gap: 10px;
     cursor: pointer;
 }
@@ -55,92 +56,92 @@
 }
 
 
-.poken-normal {
+.poke-normal {
   background-color: #a8a878;
   border: 2px solid #6d6d4e;
 }
 
-.poken-fire {
+.poke-fire {
   background-color: #f08030;
   border: 2px solid #9c531f;
 }
 
-.poken-water {
+.poke-water {
   background-color: #6890f0;
   border: 2px solid #445e9c;
 }
 
-.poken-electric {
+.poke-electric {
   background-color: #f8d030;
   border: 2px solid #a1871f;
 }
 
-.poken-grass {
+.poke-grass {
   background-color: #78c850;
   border: 2px solid #4e8234;
 }
 
-.poken-ice {
+.poke-ice {
   background-color: #98d8d8;
   border: 2px solid #638d8d;
 }
 
-.poken-fighting {
+.poke-fighting {
   background-color: #c03028;
   border: 2px solid #7d1f1a;
 }
 
-.poken-poison {
+.poke-poison {
   background-color: #a040a0;
   border: 2px solid #682a68;
 }
 
-.poken-ground {
+.poke-ground {
   background-color: #e0c068;
   border: 2px solid #927d44;
 }
 
-.poken-flying {
+.poke-flying {
   background-color: #a890f0;
   border: 2px solid #6d5e9c;
 }
 
-.poken-psychic {
+.poke-psychic {
   background-color: #f85888;
   border: 2px solid #a13959;
 }
 
-.poken-bug {
+.poke-bug {
   background-color: #a8b820;
   border: 2px solid #6d7815;
 }
 
-.poken-rock {
+.poke-rock {
   background-color: #b8a038;
   border: 2px solid #786824;
 }
 
-.poken-ghost {
+.poke-ghost {
   background-color: #705898;
   border: 2px solid #493963;
 }
 
-.poken-dragon {
+.poke-dragon {
   background-color: #7038f8;
   border: 2px solid #4924a0;
 }
 
-.poken-dark {
+.poke-dark {
   background-color: #705848;
   border: 2px solid #49392f;
 }
 
-.poken-steel {
+.poke-steel {
   background-color: #b8b8d0;
   border: 2px solid #787887;
 }
 
-.poken-fairy {
+.poke-fairy {
   background-color: #ee99ac;
   border: 2px solid #9b6470;
 }

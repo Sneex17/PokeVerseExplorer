@@ -11,12 +11,11 @@ function PaginationBtn({ OnBack, OnNext, Cargando, Page }: PaginationProp) {
   return (
     <div className="Container-Pagination">
       <ButtonControl
-        text="Back"
-        OnClick={OnBack}
+        OnBack={OnBack}
+        OnNext={OnNext}
         Cargando={Cargando}
         Page={Page}
       />
-      <ButtonControl text="Next" OnClick={OnNext} Cargando={Cargando} />
     </div>
   );
 }

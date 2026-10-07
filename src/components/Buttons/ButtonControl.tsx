@@ -1,15 +1,16 @@
 import "./ButtonControl.css";
 
 type ButtonProps = {
-  text: string;
-  OnClick: () => void
+  OnBack?: () => void;
+  OnNext?: () => void;
   Cargando?: boolean;
   Page?: number
 };
-function ButtonControl({ text, OnClick, Cargando, Page }: ButtonProps) {
+function ButtonControl({OnBack, OnNext, Cargando, Page }: ButtonProps) {
   return (
     <div>
-      <button className="Control-Btn" onClick={OnClick} disabled={Cargando || Page === 0}>{text}</button>
+      <button className="Control-Btn" onClick={OnBack} disabled={Cargando || Page === 0}>Back</button>
+      <button className="Control-Btn" onClick={OnNext} disabled={Cargando || Page === 1344}>Next</button>
     </div>
   );
 }
