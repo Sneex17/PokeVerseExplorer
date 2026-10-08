@@ -11,6 +11,9 @@ import {
 import type PokeDex from "../interfaces/ListaPoke";
 import PaginationBtn from "../Pagination/PaginationBtn";
 
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
 function Home() {
   const [Cargando, setCargando] = useState(true);
   const [ListaPokeDex, setListaPokeDex] = useState<PokeDex[]>([]);
@@ -19,14 +22,33 @@ function Home() {
   const [BuscarNombre, setBuscarNombre] = useState("");
   const [SinResultados, setSinResultados] = useState(false);
 
+  const PokeAlerta = withReactContent(Swal);
+
   const handleFilterPokemon = async (nombre: string) => {
     try {
-      const busqueda = await ListaFiltrarPokemon(nombre);
-      setListaPokeDex(busqueda);
-      setSinResultados(nombre !== "" && busqueda.length === 0);
+      if (nombre === "") {
+        PokeAlerta.fire({
+          title: "Acción de buscar sin nombre",
+          text: "Debe de ingresar el nombre de un Pokémon a buscar. Ej: Pikachu",
+          icon: "info",
+          confirmButtonText: "Ok",
+        });
+      } else {
+        const busqueda = await ListaFiltrarPokemon(nombre);
+        setListaPokeDex(busqueda);
+        setSinResultados(nombre !== "" && busqueda.length === 0);
+      }
     } catch (error) {
       setSinResultados(true);
     }
+  };
+
+  const handleCancelar = async () => {
+    try {
+      const data = await ListaPokemon(0);
+      setListaPokeDex(data);
+      setSinResultados(false);
+    } catch (error) {}
   };
 
   useEffect(() => {
@@ -57,7 +79,7 @@ function Home() {
           OnBuscar={() => handleFilterPokemon(BuscarNombre)}
           OnCancelar={() => {
             setBuscarNombre("");
-            handleFilterPokemon("");
+            handleCancelar();
           }}
         />
         <PaginationBtn

@@ -44,3 +44,14 @@ export async function ListaFiltrarPokemon(texto: string) {
         return []
     }
 }
+
+export async function DetallePokemon(PokeId: number) {
+    try {
+        const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${PokeId}/`);
+
+        return data.results;
+    } catch (error) {
+        console.error('Error al obtener:', error);
+        return []
+    }
+}
