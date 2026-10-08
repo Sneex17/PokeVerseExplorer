@@ -11,7 +11,7 @@ function DetallePokemon() {
   const { id } = useParams();
   const { PokeId, setPokeId } = usePokemon();
   const [Pokemon, setPokemon] = useState<any>(null);
-  
+
   setPokeId(Number(id));
 
 
@@ -36,7 +36,7 @@ function DetallePokemon() {
         <h3 className="Text-Detalle">Detalle del Pokémon</h3>
       </div>
       <div className="Container-CardDetalle">
-        <DetalleCardPokemon />
+        <DetalleCardPokemon Pokemon={Pokemon}/>
       </div>
     </div>
   );
