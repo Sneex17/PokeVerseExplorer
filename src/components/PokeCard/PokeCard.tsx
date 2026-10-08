@@ -31,10 +31,11 @@ type DataCardProps = {
   Nombre: string;
   Imagen: string;
   Tipos: any[];
+  OnClick: () => void;
 };
-function PokeCard({ PokeId, Nombre, Imagen, Tipos }: DataCardProps) {
+function PokeCard({ PokeId, Nombre, Imagen, Tipos,OnClick }: DataCardProps) {
   return (
-    <div className="Container-Card" key={PokeId}>
+    <div className="Container-Card" key={PokeId} onClick={OnClick}>
       <div className="Container-id">
         <h4 className="poke-id">#{PokeId}</h4>
       </div>

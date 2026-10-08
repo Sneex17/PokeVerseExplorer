@@ -1,15 +1,10 @@
-import { useState } from "react";
-import Home from "../src/components/Home/Home";
 import "./App.css";
-import HeaderMain from "./components/Header/HeaderMain";
+import MyRouter from "./components/routes/MyRouter";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <HeaderMain />
-      <Home />
+      <MyRouter/>
     </>
   );
 }
