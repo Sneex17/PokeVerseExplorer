@@ -12,11 +12,94 @@
 .Container-Info {
     width: 400px;
     height: 100%;
-    background-color: brown;
+    
 }
 
+.Info{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     padding: 0;
+     background-color: brown;
+     gap: 10px;
+}
+
+.Poke-Name{
+    color: #243458;
+    font-size: 20px;
+}
+
+.Container-Data-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.Container-Datos-Pokemon{
+    display: flex;
+    flex-direction: row;
+}
+.Dato-Pokemon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    background-color: beige;
+    border: 2px solid #243458;
+    gap: 10px;
+}
+
+.Radio-L{
+    border-radius: 15px 0 0 0;
+}
+
+.Radio-R{
+    border-radius: 0 15px 0 0;
+}
+
+.Container-Habilidades{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 234px;
+    padding: 0 17px;
+    background-color: antiquewhite;
+    border-radius: 0 0 15px 15px;
+    border: 2px solid #243458;
+    gap: 10px;
+}
+.Data-Icon{
+    font-size: 25px;
+    color: #243458;
+}
+
+.Dato-Info{
+display: flex;
+flex-direction: column;
+color: #6f86b2;
+}
+
+.Info-Text{
+    margin-bottom: -10px;
+}
+
+
+
 .Container-Img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 500px;
     height: 100%;
-    background-color: burlywood;
+    background-image: url('/src/assets/FondoPaisaje.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 0 15px 15px 0;
+}
+
+.Pokemon-img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
 }

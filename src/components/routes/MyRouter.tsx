@@ -6,8 +6,8 @@ function MyRouter() {
   return (
     <Routes>
       <Route path="/" element={<MenuPincipal />}>
-        <Route index path="Home" element={<Home/>} />
-        <Route path="PokeDetalle" element={<DetallePokemon />} />
+        <Route index element={<Home/>} />
+        <Route path="PokeDetalle/:id" element={<DetallePokemon />} />
       </Route>
     </Routes>
   );

@@ -10,14 +10,14 @@ import {
 
 import type PokeDex from "../../interfaces/ListaPoke";
 import PaginationBtn from "../../Pagination/PaginationBtn";
-
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { useNavigate } from "react-router-dom";
+import { usePokemon } from "../../../context/PokemonProvider";
 
 function Home() {
-const navegacion = useNavigate()
-
+  const navegacion = useNavigate();
+  const {setPokeId}  = usePokemon();
   const [Cargando, setCargando] = useState(true);
   const [ListaPokeDex, setListaPokeDex] = useState<PokeDex[]>([]);
   const [Pokemon, setPokemon] = useState<any>([]);
@@ -104,7 +104,10 @@ const navegacion = useNavigate()
                 Nombre={p.name}
                 Imagen={p.sprites.other.dream_world.front_default}
                 Tipos={p.types}
-                OnClick={() => navegacion('/PokeDetalle')}
+                OnClick={() => {
+                  setPokeId(p.id)
+                  navegacion(`/PokeDetalle/${p.id}`)
+                }}
               />
             );
           })}
