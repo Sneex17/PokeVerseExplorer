@@ -1,0 +1,15 @@
+.Container-Detalle{
+    padding: 17px;
+}
+
+.Container-Control{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 17px;
+}
+
+.Text-Detalle{
+    color: #243458;
+    font-size: 26px;
+}
