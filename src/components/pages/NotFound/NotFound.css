@@ -1,0 +1,41 @@
+.Container-notfoud {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px 0;
+}
+
+
+.Container-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 550px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.Personajes-img {
+    width: 100%;
+}
+
+.Container-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 27px;
+    width: 500px;
+    height: 500px;
+}
+
+.img-404 img {
+    width: 300px;
+}
+
+.Mensaje {
+    color: #243458;
+}
+
+.Sub-Mensaje {
+    color: #243458;
+}

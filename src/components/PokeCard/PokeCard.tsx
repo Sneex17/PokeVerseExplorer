@@ -21,7 +21,7 @@ function PokeCard({ PokeId, Nombre, Imagen, Tipos,OnClick }: DataCardProps) {
         <h3 className="text-name">{Nombre}</h3>
       </div>
       {Tipos.map((t) => (
-        <div className={`Container-tipo ${getEstilo(t.type.name)}`}>
+        <div className={`Container-tipo ${getEstilo(t.type.name)}`} key={t.type.name}>
           <h4 className="Poke-tipo">{t.type.name}</h4>
         </div>
       ))}

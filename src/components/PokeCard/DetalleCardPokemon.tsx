@@ -26,7 +26,7 @@ function DetalleCardPokemon({ Pokemon }: PokemonProps) {
 
         <div className="Container-Tipos">
           {Pokemon.types.map((t: any) => (
-            <div className={`Container-tipo ${getEstilo(t.type.name)}`}>
+            <div className={`Container-tipo ${getEstilo(t.type.name)}`} key={t.type.name}>
               <h4 className="Poke-tipo">{t.type.name}</h4>
             </div>
           ))}
