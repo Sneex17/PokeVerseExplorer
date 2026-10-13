@@ -13,3 +13,11 @@
     color: #243458;
     font-size: 26px;
 }
+
+.Container-CardDetalle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}

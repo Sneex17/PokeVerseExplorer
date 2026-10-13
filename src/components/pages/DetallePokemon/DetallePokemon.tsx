@@ -6,6 +6,7 @@ import DetalleCardPokemon from "../../PokeCard/DetalleCardPokemon";
 import { useParams } from "react-router-dom";
 import { usePokemon } from "../../../context/PokemonProvider";
 import { BuscarDetallePokemon } from "../../Api/PokeAPI";
+import Statuscard from "../../PokeCard/StatusCard";
 
 function DetallePokemon() {
   const { id } = useParams();
@@ -29,6 +30,9 @@ function DetallePokemon() {
   console.log(PokeId);
   console.log(Pokemon);
   const nagegacion = useNavigate();
+
+  if (!Pokemon) return <p>Cargando...</p>;
+  
   return (
     <div className="Container-Detalle">
       <div className="Container-Control">
@@ -37,6 +41,7 @@ function DetallePokemon() {
       </div>
       <div className="Container-CardDetalle">
         <DetalleCardPokemon Pokemon={Pokemon}/>
+        <Statuscard PokeStatus={Pokemon}/>
       </div>
     </div>
   );

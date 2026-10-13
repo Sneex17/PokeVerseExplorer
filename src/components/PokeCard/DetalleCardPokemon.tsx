@@ -33,14 +33,14 @@ function DetalleCardPokemon({ Pokemon }: PokemonProps) {
         </div>
         <div className="Container-Data-main">
           <div className="Container-Datos-Pokemon">
-            <div className="Dato-Pokemon Radio-L">
+            <div className="Dato-Pokemon">
               <FontAwesomeIcon icon={faUpDown} className="Data-Icon" />
               <div className="Data-Info">
                 <h4 className="Info-Text">Altura</h4>
                 <h4 className="Info-Data">{Pokemon.height / 10} m</h4>
               </div>
             </div>
-            <div className="Dato-Pokemon Radio-R">
+            <div className="Dato-Pokemon">
               <FontAwesomeIcon icon={faWeightHanging} className="Data-Icon" />
               <div className="Data-Info">
                 <h4 className="Info-Text">Peso</h4>

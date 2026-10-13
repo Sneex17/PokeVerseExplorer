@@ -44,11 +44,13 @@
     align-items: center;
     margin: 0;
     padding: 0;
+    gap: 10px;
 }
 
 .Container-Datos-Pokemon {
     display: flex;
     flex-direction: row;
+    gap: 10px;
 }
 
 .Dato-Pokemon {
@@ -56,27 +58,21 @@
     flex-direction: row;
     align-items: center;
     padding: 0 20px;
-    background-color: beige;
+    background-color: white;
+    border-radius: 14px;
     border: 2px solid #243458;
     gap: 10px;
 }
 
-.Radio-L {
-    border-radius: 15px 0 0 0;
-}
-
-.Radio-R {
-    border-radius: 0 15px 0 0;
-}
 
 .Container-Habilidades {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 224px;
+    width: 240px;
     padding: 0 17px;
-    background-color: antiquewhite;
-    border-radius: 0 0 15px 15px;
+    background-color: white;
+    border-radius: 14px;
     border: 2px solid #243458;
     gap: 10px;
 }

@@ -21,5 +21,19 @@ const TiposPokemon: ClaveValor[] = [
   { tipo: "fairy", estilo: "poke-fairy" },
 ];
 
+
+const TipoStatus: ClaveValor[] = [
+  { tipo: "hp", estilo: "Status-hp" },
+  { tipo: "attack", estilo: "Status-attack" },
+  { tipo: "defense", estilo: "Status-defense" },
+  { tipo: "special-attack", estilo: "Status-special-attack" },
+  { tipo: "special-defense", estilo: "Status-special-defense" },
+  { tipo: "speed", estilo: "Status-speed" },
+]
+
+
 export const getEstilo = (tipo: string) =>
   TiposPokemon.find(t => t.tipo === tipo)?.estilo ?? "poken-normal";
+
+export const getStatusEstilo = (status: string) =>
+  TipoStatus.find(s => s.tipo === status)?.estilo ?? "Status-hp";
