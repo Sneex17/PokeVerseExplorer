@@ -4,7 +4,7 @@ import type PokeDex from "../interfaces/ListaPoke";
 
 export async function ListaPokemon(inicio: number) {
     try {
-        const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=21&offset=${inicio}`);
+        const { data } = await axios.get(`${import.meta.env.VITE_LISTA_POKEMON}${inicio}`);
 
         return data.results;
     } catch (error) {
@@ -33,7 +33,7 @@ export async function ListaFiltrarPokemon(texto: string) {
             return ListaPokemon(0);
 
         } else {
-            const { data } = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0');
+            const { data } = await axios.get(import.meta.env.VITE_LISTA_ALL_POKEMON);
 
             const nombre = texto.toLowerCase().trim();
 
@@ -47,7 +47,7 @@ export async function ListaFiltrarPokemon(texto: string) {
 
 export async function BuscarDetallePokemon(PokeId: number) {
     try {
-        const { data } = await axios.get(`https://pokeapi.co/api/v2/pokemon/${PokeId}/`);
+        const { data } = await axios.get(`${import.meta.env.VITE_DETALLE_POKEMON}${PokeId}/`);
 
         return data;
     } catch (error) {

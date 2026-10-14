@@ -37,6 +37,11 @@
         grid-template-columns: repeat(4, 1fr);
     }
 }
+@media screen and (min-width: 610px) and (max-width: 766px) {
+    .Container-Dex {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /*Laptops y PC de 13 inch*/
 @media screen and (min-width: 1100px) and (max-width: 1400px) {
     .Container-Dex {
@@ -45,7 +50,7 @@
 }
 
 /*Moviles*/
-@media screen and (min-width: 377px) and (max-width: 500px) {
+@media screen and (min-width: 377px) and (max-width: 600px) {
     .Container-Dex {
         grid-template-columns: repeat(2, 1fr);
     }
