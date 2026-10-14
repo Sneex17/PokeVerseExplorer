@@ -27,7 +27,10 @@
     width: 500px;
     height: 500px;
 }
-
+.img-404{
+    display: flex;
+    justify-content: center;
+}
 .img-404 img {
     width: 300px;
 }
@@ -38,4 +41,85 @@
 
 .Sub-Mensaje {
     color: #243458;
+}
+
+/*Responsivo:*/
+/*Moviles*/
+@media screen and (max-width: 768px) {
+    .Container-notfoud {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .Container-img {
+        align-items: center;
+    }
+
+    .Personajes-img {
+        width: 75%;
+
+    }
+
+    .Container-info {
+        margin-top: -120px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+.img-404{
+    display: flex;
+    justify-content: center;
+}
+    .img-404 img {
+        width: 90%;
+    }
+
+    .Mensaje {
+        margin-top: -10px;
+        font-size: 25px;
+    }
+
+    .Sub-Mensaje {
+        font-size: 17px;
+    }
+}
+
+/* Tablets*/
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+    .Container-notfoud {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .Container-img {
+        align-items: center;
+    }
+
+    .Personajes-img {
+        width: 90%;
+
+    }
+
+    .Container-info {
+        margin-top: -90px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .img-404 img {
+        width: 90%;
+    }
+
+    .Mensaje {
+        font-size: 30px;
+    }
+
+    .Sub-Mensaje {
+        font-size: 20px;
+    }
 }

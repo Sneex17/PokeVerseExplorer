@@ -112,3 +112,85 @@
     height: 90%;
     object-fit: contain;
 }
+
+/*Responsivo*/
+/*Moviles*/
+@media screen and (min-width: 319px) and (max-width: 767px) {
+
+    .Container-card {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .Container-Info {
+        width: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .Container-Data-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .Dato-Pokemon {
+        width: 105px;
+        padding: 5px;
+    }
+
+    .Container-Habilidades {
+        width: auto;
+    }
+
+    .Data-Icon {
+        font-size: 22px;
+    }
+
+    .Container-Img {
+        width: 100%;
+        border-radius: 0 0 13px 13px;
+    }
+
+    .Pokemon-img {
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
+    }
+}
+
+/*Tablets*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .Container-card {
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .Container-CardDetalle {
+        flex-direction: column;
+    }
+
+    .Container-Info {
+        width: 100%;
+        border-radius: 13px 13px 0 0;
+    }
+
+    .Container-Data-main {
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .Container-Img {
+        width: 100%;
+        border-radius: 0 0 13px 13px;
+    }
+
+    .Pokemon-img {
+        width: 70%;
+        height: 70%;
+        object-fit: contain;
+    }
+}

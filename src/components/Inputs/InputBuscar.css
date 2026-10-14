@@ -47,3 +47,25 @@
     color: grey;
     font-size: 17px;
 }
+
+@media screen and (min-width: 319px) and (max-width: 500px) {
+
+    .Container-buscar{
+        width: 100%;
+        align-content: space-between;
+    }
+    .Input-buscar {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .Btn-Buscar .Icon-Buscar {
+    color: rgb(72, 113, 189);
+    font-size: 15px;
+}
+
+.Btn-Cancelar .Icon-Cancelar {
+    color: grey;
+    font-size: 15px;
+}
+}

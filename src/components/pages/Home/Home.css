@@ -1,20 +1,57 @@
-.Container-Main{
+.Container-Main {
     padding: 0;
 }
 
-.Container-Controles{
+.Container-Controles {
     display: flex;
     flex-direction: row;
     padding: 10px 17px;
     gap: 10px;
 }
-.Container-Dex{
+
+.Container-Dex {
     width: auto;
     height: auto;
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-items: center;
-    
+
     gap: 10px;
+}
+
+
+/*Responsivo*/
+/*Tablets y Moviles*/
+@media screen and (min-width: 319px) and (max-width: 1024px) {
+    .Container-Controles {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*Tablets*/
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    .Container-Dex {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/*Laptops y PC de 13 inch*/
+@media screen and (min-width: 1100px) and (max-width: 1400px) {
+    .Container-Dex {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+/*Moviles*/
+@media screen and (min-width: 377px) and (max-width: 500px) {
+    .Container-Dex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 376px) {
+    .Container-Dex {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }

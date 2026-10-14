@@ -74,3 +74,40 @@
 .Status-speed {
     background-color: #E6B422;
 }
+
+/*Responsivo*/
+/*Moviles*/
+@media screen and (min-width: 319px) and (max-width: 768px) {
+    .Container-Status {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/*Tablets*/
+@media screen and (min-width: 835px) {
+    .Container-Status {
+        width: 550px;
+        padding: 10px;
+    }
+
+    .text-status {
+        font-size: 27px;
+    }
+
+    .Status-name {
+        font-size: 23px;
+    }
+
+    .Status-bar {
+        height: 17px;
+    }
+
+    .Container-bar {
+        margin-bottom: 0;
+    }
+
+    .percent {
+        font-size: 20px;
+    }
+}

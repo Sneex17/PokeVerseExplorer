@@ -57,3 +57,17 @@
     font-size: 17px;
     color: #a0aecd;
 }
+/*Responsivo*/
+@media screen and (max-width: 768px) {
+
+    .text {
+        width: 100px;
+    }
+
+    .ball{
+        width: 60px;
+    }
+    .text-msj {
+        font-size: 14px;
+    }
+}

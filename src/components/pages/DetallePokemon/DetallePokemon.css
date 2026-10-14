@@ -21,3 +21,24 @@
     align-items: center;
     gap: 17px;
 }
+
+/*Responsivo*/
+/*Moviles*/
+@media screen and (max-width: 768px) {
+    .Container-Control{
+        flex-direction: column;
+    }
+
+    .Container-CardDetalle{
+        flex-direction: column;
+    }
+
+}
+
+/*Tablets*/
+@media screen and (max-width: 900px) {
+
+    .Container-CardDetalle{
+        flex-direction: column;
+    }
+}
