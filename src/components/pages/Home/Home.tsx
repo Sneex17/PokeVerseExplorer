@@ -14,10 +14,11 @@ import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 import { useNavigate } from "react-router-dom";
 import { usePokemon } from "../../../context/PokemonProvider";
+import { Mensajes } from "../../Alertas/MensajesAlertas";
 
 function Home() {
   const navegacion = useNavigate();
-  const {setPokeId}  = usePokemon();
+  const { setPokeId } = usePokemon();
   const [Cargando, setCargando] = useState(true);
   const [ListaPokeDex, setListaPokeDex] = useState<PokeDex[]>([]);
   const [Pokemon, setPokemon] = useState<any>([]);
@@ -29,13 +30,24 @@ function Home() {
 
   const handleFilterPokemon = async (nombre: string) => {
     try {
-      if (nombre === "") {
-        PokeAlerta.fire({
-          title: "Acción de buscar sin nombre",
-          text: "Debe de ingresar el nombre de un Pokémon a buscar. Ej: Pikachu",
-          icon: "info",
-          confirmButtonText: "Ok",
+      if (nombre.length < 3 && nombre.length > 0) {
+
+        Mensajes({
+          titulo: "Acción de buscar",
+          texto: "Debe de ingresar un nombre con mínimo 3 caracteres. Ej: muk",
+          icono: "info",
+          confirmacion: "Ok",
         });
+        
+      } else if (nombre === "") {
+
+         Mensajes({
+          titulo: "Acción de buscar sin nombre",
+          texto: "Debe de ingresar el nombre de un Pokémon a buscar. Ej: Pikachu",
+          icono: "info",
+          confirmacion: "Ok",
+        });
+       
       } else {
         const busqueda = await ListaFiltrarPokemon(nombre);
         setListaPokeDex(busqueda);
@@ -105,8 +117,8 @@ function Home() {
                 Imagen={p.sprites.other.dream_world.front_default}
                 Tipos={p.types}
                 OnClick={() => {
-                  setPokeId(p.id)
-                  navegacion(`/PokeDetalle/${p.id}`)
+                  setPokeId(p.id);
+                  navegacion(`/PokeDetalle/${p.id}`);
                 }}
               />
             );
