@@ -10,8 +10,6 @@ import {
 
 import type PokeDex from "../../interfaces/ListaPoke";
 import PaginationBtn from "../../Pagination/PaginationBtn";
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
 import { useNavigate } from "react-router-dom";
 import { usePokemon } from "../../../context/PokemonProvider";
 import { Mensajes } from "../../Alertas/MensajesAlertas";
@@ -26,7 +24,6 @@ function Home() {
   const [BuscarNombre, setBuscarNombre] = useState("");
   const [SinResultados, setSinResultados] = useState(false);
 
-  const PokeAlerta = withReactContent(Swal);
 
   const handleFilterPokemon = async (nombre: string) => {
     try {
@@ -74,7 +71,9 @@ function Home() {
     try {
       if (ListaPokemon.length === 0) return;
       ListaPokeCard(ListaPokeDex).then(setPokemon);
+
     } catch (error) {
+
     } finally {
       setTimeout(() => {
         setCargando(false);
@@ -82,7 +81,6 @@ function Home() {
     }
   }, [ListaPokeDex]);
 
-  console.log(Pokemon);
 
   return (
     <div className="Container-Main">

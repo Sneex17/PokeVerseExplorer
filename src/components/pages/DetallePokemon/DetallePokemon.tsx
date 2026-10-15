@@ -27,8 +27,6 @@ function DetallePokemon() {
     handleBuscarDetalle();
   }, [PokeId]);
 
-  console.log(PokeId);
-  console.log(Pokemon);
   const nagegacion = useNavigate();
 
   if (!Pokemon) return <p>Cargando...</p>;
